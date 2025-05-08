@@ -53,7 +53,7 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: rgb(2, 8, 78);
   text-decoration: none;
   font-weight: bold;
 }
@@ -74,21 +74,28 @@ nav a:hover {
     font-size: 2.5em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #0a9396;
+    color: #04595a;
     text-align: center;
   }
   
-  /* Experience Section - Flexbox Layout */
-#Experience .experience-header {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  margin-bottom: 5px;
+ /* Grid layout for Experience section */
+#Experience {
+  display: grid;
+  gap: 2rem;
 }
 
-#Experience ul {
-  list-style: none;
-  padding: 0;
+.experience-item {
+  background-color: #e9d8a6;
+  padding: 1rem;
+  border-radius: 10px;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.experience-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-weight: bold;
 }
 
   /*  To Transform the "Experience" list items into styled blocks */
@@ -100,22 +107,60 @@ nav a:hover {
   }
   
   /* To Transform the style of the "Connect" links */
-  #Connect ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
-    list-style: none;
+/* Grid layout for Connect section */
+.connect-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+  /* I am choosing MOBILE layout first since most users now access the web via phones */
+  @media (min-width: 600px) {
+    h1, h2 {
+      font-size: 1.8rem; /* 1st change */
+      color: #0a9396;     /* 2nd change */
+    }
+  
+    ul {
+      background-color: #fefae0; /* 1st element, 2nd change */
+      padding: 20px;             /* 1st change */
+    }
+  
+    #name {
+      font-size: 2.8rem;     /* 1st change */
+      font-style: italic;    /* 2nd change */
+    }
   }
   
-  .connect a {
-    color: #005f73;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .connect a:hover {
-    color: #ae2012;
-    text-decoration: underline;
+  /* ------------------- */
+  /* For computers (≥1024px) */
+  /* ------------------- */
+  @media (min-width: 1024px) {
+    h1, h2 {
+      font-size: 2rem;
+      color: #005f73;
+    }
+  
+    ul {
+      background-color: #e0fbfc;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  
+    #name {
+      font-size: 3rem;
+      letter-spacing: 4px;
+    }
   }
 
-  
+  /* FOR THE FUTURE TO EXPLORE:
+ --Experience section to appear as two columns on desktop and stacked on mobile/tablet I should update css:
+Media Query
+@media (min-width: 1024px) {
+  #Experience {
+    grid-template-columns: 1fr 1fr;
+  }
+}-- */
