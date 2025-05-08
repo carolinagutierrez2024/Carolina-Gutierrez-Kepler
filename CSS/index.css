@@ -1,0 +1,58 @@
+/* To change color of background */
+body {
+    background-color: #f0f8ff; /* Light blue */
+    color: #333; /* Sets default text color */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* To use the google font */
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* To add space between sections */
+  section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px dashed #ccc; /* Optional: to help visualize sections */
+  }
+
+  /* To change alignment */
+  #about {
+    text-align: center;
+  }
+
+  /* To Change the font size, weight, and color of headings */
+  h1, h2, h3 {
+    font-weight: 700;
+    color: #005f73;
+  }
+
+  /* To Transform the style of my Name at the top of the page */
+  #name {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0a9396;
+  }
+  
+  /*  To Transform the "Experience" list items into styled blocks */
+  .experience li {
+    background-color: #e9d8a6;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  /* To Transform the style of the "Connect" links */
+  .connect a {
+    color: #005f73;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .connect a:hover {
+    color: #ae2012;
+    text-decoration: underline;
+  }
+
+  
