@@ -1,73 +1,104 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
-<!-- To add the part for lesson 8 -->
-<link rel="stylesheet" href="css/index.css">
-
-<h1 id="name">Carolina Gutierrez</h1>
-
 <head>
-    <!-- For the google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-<!-- Lesson 7 -->
+   <!-- Lesson 7 -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio Webpage for Carolina Gutierrez" />
   <meta name="author" content="Carolina Gutierrez" />
   <title>Carolina Gutierrez's Portfolio</title>
+
+   <!-- For the google font -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+   <!-- To add the part for lesson 8 -->
+<link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
+<!-- Main Heading -->
+<h1 id="name">Carolina Gutierrez, PhD</h1>
 
   <!-- Navigation Menu -->
   <nav>
     <ul>
-      <li><a href="#About">About</a></li>
-      <li><a href="#Experience">Experience</a></li>
-      <li><a href="#Connect">Connect</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Connect">Connect</a></li>
     </ul>
   </nav>
 
-  <!-- Main Heading -->
-  <h1>Carolina Gutierrez</h1>
-  
-
-
-  <!-- Profile Image -->
-  <img src="https://sustainability.colostate.edu/wp-content/uploads/people-pictures/CarolinaGutierrez-300x300.jpg" alt="Carolina Gutierrez Profile Photo" width="150" height="150" />
+    <!-- Profile Image -->
+<div class="profile-pic">
+    <img src="https://sustainability.colostate.edu/wp-content/uploads/people-pictures/CarolinaGutierrez-300x300.jpg" alt="Carolina Gutierrez Profile Photo" width="150" height="150" />
+  </div>
 
   <!-- About Section -->
   <section id="About">
     <h2>About</h2>
-    <p>Hello! I am Carolina Gutierrez, currently learning web development through Code the Dream. I enjoy building useful and creative tools with HTML, CSS, and JavaScript. I'm passionate about using code to solve real-world problems and continuously expanding my skillset.</p>
+    <p>Hello! I am Carolina Gutierrez (MSc in Biology and PhD in Ecology), currently learning web development through Code the Dream. I enjoy building useful and creative tools with HTML, CSS, and JavaScript. I'm passionate about using code to solve real-world problems and continuously expanding my skillset.</p>
   </section>
 
   <!-- Experience Section -->
   <section id="Experience">
     <h2>Experience</h2>
-    <ul>
-      <li>Intro to Programming - Code the Dream</li>
-      <li>HTML & CSS fundamentals</li>
-      <li>Basic JavaScript programming</li>
-      <li>Collaborative coding practices (pair programming, GitHub)</li>
-      <li>AP Biology Teacher</li>
-      <li>Environmental Consultant</li>
+  
+    <div class="experience-item">
+        <div class="experience-header">
+          <span class="job-title">Intro to Programming – Code the Dream</span>
+          <span class="job-dates">2024 – Present</span>
+        </div>
+        <p>Developed beginner-level projects using HTML, CSS, and JavaScript. Collaborated with peers via GitHub.</p>
+      </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <span class="job-title">AP Biology Teacher</span>
+        <span class="job-dates">2020 – Present</span>
+      </div>
+      <p>Led students to top district AP scores, implemented bilingual STEM resources.</p>
+    </div>
+  
+    <div class="experience-item">
+      <div class="experience-header">
+        <span class="job-title">Environmental Consultant</span>
+        <span class="job-dates">2007 – 2020</span>
+      </div>
+      <p> Biodiversity Analysis, Supported NEPA and INRMP documentation, focusing on climate impacts to natural resources.</p>
+    </div>
+  
+  </section>
+
+  <!-- Skills Section -->
+  <section id="Skills">
+    <h2>Skills</h2>
+    <!-- I will add skills using JavaScript later -->
+  </section>
+
+
+  <!-- Projects Section -->
+  <section id="Projects">
+    <h2>Projects</h2>
+    <ul id="project-list">
+      <!-- GitHub API projects will be here -->
     </ul>
   </section>
 
+
   <!-- Connect Section -->
-  <div class="connect"></div>
   <section id="Connect">
     <h2>Connect</h2>
-    <ul>
+    <ul class="connect-links">
       <li><a href="https://github.com/carolinagutierrez2024" target="_blank">GitHub</a></li>
-      <li><a href="www.linkedin.com/in/carolina-gutierrez-phd" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.linkedin.com/in/carolina-gutierrez-phd" target="_blank">LinkedIn</a></li>
     </ul>
-  </div>
   </section>
 
 </body>
 
 </html>
-<!-- Just learnt that I can make my usual comment with Ctrl + / -->
+<!-- Comments shortcut: Ctrl + / -->

@@ -2,7 +2,7 @@
 body {
     background-color: #f0f8ff; /* Light blue */
     color: #333; /* Sets default text color */
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
   /* To use the google font */
@@ -22,6 +22,47 @@ body {
     text-align: center;
   }
 
+  .profile-pic {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .profile-pic img {
+    border-radius: 50%;
+  }
+  
+  /* Navigation - Sticky Header */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #005f73;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
   /* To Change the font size, weight, and color of headings */
   h1, h2, h3 {
     font-weight: 700;
@@ -34,8 +75,22 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #0a9396;
+    text-align: center;
   }
   
+  /* Experience Section - Flexbox Layout */
+#Experience .experience-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#Experience ul {
+  list-style: none;
+  padding: 0;
+}
+
   /*  To Transform the "Experience" list items into styled blocks */
   .experience li {
     background-color: #e9d8a6;
@@ -45,6 +100,14 @@ body {
   }
   
   /* To Transform the style of the "Connect" links */
+  #Connect ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
   .connect a {
     color: #005f73;
     text-decoration: none;
