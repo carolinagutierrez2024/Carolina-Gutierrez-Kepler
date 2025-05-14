@@ -170,7 +170,101 @@ nav a:hover {
     padding: 8px 12px;
     font-weight: bold;
   }
-  
+
+
+  /* WEEK 12 ASSIGNMENT */
+/* Style the message form section */
+#LeaveMessage {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit button */
+form button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Messages section */
+#messages {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#messages ul {
+  list-style: none;
+  padding: 0;
+}
+
+#messages li {
+  background-color: #e9f5ff;
+  border: 1px solid #b3e0ff;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+/* Remove button */
+#messages button {
+  margin-left: 10px;
+  padding: 6px 10px;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#messages button:hover {
+  background-color: #e64545;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  #LeaveMessage,
+  #messages {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 1.1em;
+  }
+}
+
 
   /* FOR THE FUTURE TO EXPLORE:
  --Experience section to appear as two columns on desktop and stacked on mobile/tablet I should update css:
