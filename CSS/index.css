@@ -156,6 +156,22 @@ nav a:hover {
     }
   }
 
+  #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+  }
+  
+  #skills li {
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-weight: bold;
+  }
+  
+
   /* FOR THE FUTURE TO EXPLORE:
  --Experience section to appear as two columns on desktop and stacked on mobile/tablet I should update css:
 Media Query
