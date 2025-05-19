@@ -89,3 +89,49 @@ newMessage.appendChild(editButton);
   // Clear the form
   messageForm.reset();
 });
+
+// Week 13 GitHub Repositories Section
+const GITHUB_USERNAME = "carolinagutierrez2024";
+
+fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`)
+  .then(response => response.json())
+  .then(repositories => {
+    console.log(repositories); // Log repos to verify
+
+    const projectSection = document.getElementById("Projects");
+    const projectList = projectSection.querySelector("ul");
+
+    //Just trying to see if I can make them link-able or clickable:
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+
+      const link = document.createElement("a");
+      link.href = repositories[i].html_url;
+      link.innerText = repositories[i].name;
+      link.target = "_blank"; // Open in a new tab
+      link.rel = "noopener noreferrer"; // Security best practice
+
+      project.appendChild(link);
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    console.error("Error fetching GitHub repositories:", error);
+
+    const projectSection = document.getElementById("Projects");
+    const errorMessage = document.createElement("p");
+    errorMessage.innerText = "Unable to load GitHub repositories at this time.";
+    projectSection.appendChild(errorMessage);
+  });
+
+  //To display the repos
+  function displayRepositories(repositories) {
+  const projectSection = document.getElementById('Projects');
+  const projectList = projectSection.querySelector('ul'); // assumes <ul> is inside #projects
+
+  for (let i = 0; i < repositories.length; i++) {
+    const project = document.createElement('li');
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+  }
+}
