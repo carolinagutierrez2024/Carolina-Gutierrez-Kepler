@@ -265,6 +265,73 @@ form button[type="submit"]:hover {
   }
 }
 
+/* WEEK 13 - I want to style Projects like Skills section */
+/* Container for all repo cards */
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+/* Individual repo card */
+#projects li {
+  background-color: #e9d8a6;         /* light tan like Experience section */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex: 0 1 calc(33.33% - 1rem);     /* 3 columns */
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+/* Make each card pop slightly on hover */
+#projects li:hover {
+  transform: scale(1.03);
+}
+
+/* Style the link inside each box */
+#projects a {
+  text-decoration: none;
+  color: #005f73;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+}
+
+/* Make it stack on smaller screens */
+@media (max-width: 768px) {
+  #projects li {
+    flex: 0 1 100%;
+  }
+}
+
+
+
+/*Week 13 Stretch goal try:*/
+/*For grid, but I didn't like it:
+#projects ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+} */
+
+/* Week 13 – Style GitHub Repo Links Pretty up */
+#projects a {
+  text-decoration: none;
+  color: #005f73;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+}
+
+#projects a:hover {
+  text-decoration: underline;
+  color: #0077cc;
+}
 
   /* FOR THE FUTURE TO EXPLORE:
  --Experience section to appear as two columns on desktop and stacked on mobile/tablet I should update css:
