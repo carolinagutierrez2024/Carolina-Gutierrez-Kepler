@@ -2,7 +2,7 @@
 Portfolio project for Intro to Programming course with Code the Dream
 
 ## Live Website
-[Click here to view my live portfolio](https://github.com/carolinagutierrez2024/Carolina-Gutierrez-Kepler)  
+[Click here to view my live portfolio](https://carolinagutierrez2024.github.io/Carolina-Gutierrez-Kepler/)  
 
 # Carolina Gutierrez – Developer Portfolio
 
