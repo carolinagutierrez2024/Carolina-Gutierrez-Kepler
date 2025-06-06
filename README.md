@@ -71,7 +71,7 @@ Footer
 ## Contact
 
 Carolina Gutierrez, PhD  
-Email: your.email@example.com  
+Email: carolina.gutierrez.phd@gmail.com  
 GitHub: https://github.com/carolinagutierrez2024  
 LinkedIn: https://www.linkedin.com/in/carolina-gutierrez-phd
 
