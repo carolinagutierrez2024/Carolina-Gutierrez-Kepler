@@ -1,6 +1,9 @@
 # Carolina-Gutierrez-Kepler
 Portfolio project for Intro to Programming course with Code the Dream
 
+## Live Website
+[Click here to view my live portfolio](https://carolinagutierrez2024.github.io/Carolina-Gutierrez-Kepler/)  
+
 # Carolina Gutierrez – Developer Portfolio
 
 Welcome to my web developer portfolio! This project was built as the final submission for the Code the Dream Intro to Programming course. It highlights the skills I’ve gained in HTML, CSS, and JavaScript and introduces who I am as a scientist-turned-developer. Through this project, I explored DOM manipulation, API integration, responsive design, and interactive features.
@@ -71,7 +74,7 @@ Footer
 ## Contact
 
 Carolina Gutierrez, PhD  
-Email: your.email@example.com  
+Email: carolina.gutierrez.phd@gmail.com  
 GitHub: https://github.com/carolinagutierrez2024  
 LinkedIn: https://www.linkedin.com/in/carolina-gutierrez-phd
 
