@@ -12,8 +12,11 @@
    <!-- For the google font -->
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
+   <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
    <!-- To add the part for lesson 8 -->
-<link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/index.css">
 
 </head>
 
@@ -21,17 +24,32 @@
 <!-- Main Heading -->
 <h1 id="name">Carolina Gutierrez, PhD</h1>
 
-  <!-- Navigation Menu -->
-  <nav>
-    <ul>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Experience">Experience</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Connect">Connect</a></li>
-        <li><a href="#LeaveMessage">Leave a Message</a></li>
+<!-- Navigation Menu -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">Carolina Gutierrez, PhD.</div>
+
+    <!-- Hamburger Icon -->
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#About">About</a></li>
+      <li><a href="#Experience">Experience</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Connect">Connect</a></li>
+      <li><a href="#LeaveMessage">Leave a Message</a></li>
+      <!-- Dark Mode Toggle Stays in Menu -->
+      <li>
+        <label class="dark-mode-toggle">
+          <input type="checkbox" id="darkModeSwitch" />
+          Dark Mode
+        </label>
+      </li>
     </ul>
-  </nav>
+  </div>
+</nav>
 
     <!-- Profile Image -->
 <div class="profile-pic">
@@ -58,7 +76,7 @@
 
     <div class="experience-item">
       <div class="experience-header">
-        <span class="job-title">AP Biology Teacher</span>
+        <span class="job-title">AP Biology and Environmental Educator</span>
         <span class="job-dates">2020 – Present</span>
       </div>
       <p>Led students to top district AP scores, implemented bilingual STEM resources.</p>
@@ -89,13 +107,23 @@
     </section>
 
   <!-- Connect Section -->
-  <section id="Connect">
-    <h2>Connect</h2>
-    <ul class="connect-links">
-      <li><a href="https://github.com/carolinagutierrez2024" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/carolina-gutierrez-phd" target="_blank">LinkedIn</a></li>
-    </ul>
-      </section>
+<ul class="connect-links">
+  <li>
+    <a href="mailto:carolina.gutierrez.phd@gmail.com" target="_blank" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/carolinagutierrez2024" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/carolina-gutierrez-phd" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </li>
+</ul>
 
 <!-- Message Form Section for Week 12 Assignment -->
 <section id="LeaveMessage">
@@ -128,4 +156,4 @@
 
 
 
-<!-- Comments shortcut: Ctrl + / -->
+<!-- Comments shortcut: Ctrl + / --> 
